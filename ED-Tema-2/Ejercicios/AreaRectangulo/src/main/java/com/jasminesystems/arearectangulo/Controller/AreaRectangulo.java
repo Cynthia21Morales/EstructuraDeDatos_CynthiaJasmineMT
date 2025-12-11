@@ -1,6 +1,6 @@
-package com.jasminesystems.arearectangulo.Controller;
+package com.jasminesystems.metodosdeordenamiento.entity;
 
-public class Base {
+public class AreaRectangulo {
 
     public double calcularArea(double base, double altura) {
         return base * altura;

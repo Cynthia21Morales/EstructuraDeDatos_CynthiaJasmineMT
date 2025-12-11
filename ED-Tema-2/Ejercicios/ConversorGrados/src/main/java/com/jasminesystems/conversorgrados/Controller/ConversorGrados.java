@@ -1,6 +1,6 @@
-package com.jasminesystems.conversorgrados.Controller;
+package com.jasminesystems.metodosdeordenamiento.entity;
 
-public class Base {
+public class ConversorGrados {
     public double convertir(double celsius) {
         return (celsius * 9/5) + 32;
     }
