@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.jasminesystems.estructuras2.GrafoController"
+        alignment="CENTER"
+        spacing="15">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Label text="Estructuras no lineales"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="txtNodo" promptText="Nodo (ej. A)" prefWidth="250"/>
+    <Button text="Agregar Nodo"
+            prefWidth="150"
+            onAction="#agregarNodo"/>
+
+    <Separator/>
+
+    <TextField fx:id="txtOrigen" promptText="Origen" prefWidth="250"/>
+    <TextField fx:id="txtDestino" promptText="Destino" prefWidth="250"/>
+    <Button text="Agregar Arista"
+            prefWidth="150"
+            onAction="#agregarArista"/>
+
+    <Separator/>
+
+    <Button text="Recorrido BFS desde A"
+            prefWidth="200"
+            onAction="#recorridoBFS"/>
+
+    <TextArea fx:id="txtResultado"
+              prefWidth="300"
+              prefHeight="80"
+              editable="false"/>
+</VBox>
