@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.6"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.jasminesystems.metodosbusqueda.BusquedaController"
+      spacing="10">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Ingrese un número:"/>
+    <TextField fx:id="txtNumero"/>
+
+    <HBox spacing="10">
+        <Button fx:id="btnSecuencial" text="Búsqueda Secuencial"/>
+        <Button fx:id="btnBinaria" text="Búsqueda Binaria"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button fx:id="btnHashInsert" text="Insertar Hash"/>
+        <Button fx:id="btnHashBuscar" text="Buscar Hash"/>
+        <Button fx:id="btnHashEliminar" text="Eliminar Hash"/>
+    </HBox>
+
+    <TextArea fx:id="txtResultado" editable="false" prefHeight="300"/>
+</VBox>
