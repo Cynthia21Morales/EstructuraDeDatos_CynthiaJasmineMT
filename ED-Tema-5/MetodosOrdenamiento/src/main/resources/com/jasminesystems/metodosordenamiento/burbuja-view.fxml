@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.jasminesystems.metodosordenamiento.controller.BurbujaController"
+      alignment="CENTER"
+      spacing="10"
+      style="-fx-padding: 20;">
+
+    <Label text="ORDENAMIENTO BURBUJA" style="-fx-font-size:16px; -fx-font-weight:bold;" />
+    <TextField fx:id="txtDatos" promptText="Ingrese números separados por comas" />
+    <Button text="Ordenar" onAction="#ordenar" />
+    <Button text="Regresar" onAction="#regresar" />
+    <Label fx:id="lblResultado" />
+</VBox>
