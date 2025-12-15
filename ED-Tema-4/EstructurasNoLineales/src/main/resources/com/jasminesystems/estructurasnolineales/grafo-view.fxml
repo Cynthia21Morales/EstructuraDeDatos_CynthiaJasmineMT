@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.jasminesystems.estructurasnolineales.controller.GrafoController"
+      alignment="CENTER"
+      spacing="15">
+
+    <Label text="GRAFOS"
+           style="-fx-font-size:18px; -fx-font-weight:bold;" />
+
+    <TextField fx:id="txtV1" promptText="Vértice 1" />
+    <TextField fx:id="txtV2" promptText="Vértice 2" />
+
+    <Button text="Agregar Vértice" onAction="#agregarVertice" />
+    <Button text="Agregar Arista" onAction="#agregarArista" />
+    <Button text="Mostrar Grafo" onAction="#mostrar" />
+    <Button text="Regresar" onAction="#regresar" />
+
+    <Label fx:id="lblResultado" />
+
+</VBox>
